@@ -15,6 +15,7 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 body, main {
@@ -23,11 +24,11 @@ body, main {
 
 section {
     background-color: white;
-    border-radius: 10px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.401);
     
-    width: 40vw;
-    height: 80vh;
-    margin: auto;
+    width: 250px;
+    height: 515px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -36,8 +37,8 @@ section {
 
 article#imagem {
     background-image: url("../images/pexels-declan-17631857.jpg");
-    width: 40vw;
-    height: 40vh;
+    width: 50vw;
+    height: 200px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -47,17 +48,58 @@ article#imagem {
 }
 
 article#formulario {
-    width: 40vw;
-    height: 40vh;
-    padding: 10px;
+    width: 50vw;
+}
+
+div.campo {
+    background-color: var(--lilas);
+    border: 2px solid var(--lilas);
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px;
 }
 
 article#formulario h1 {
     text-align: center;
     padding: 10px;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+article#formulario p {
+    margin-bottom: 10px;
+    font-size: 0.85em;
+    margin: 6px;
+    font-weight: lighter;
 }
 
 article#formulario form {
     text-align: center;
+    
+}
+
+article#formulario input {
+    width: 30vw;
+}
+
+article#formulario input#entrar {
+    background-color: var(--verde);
     padding: 10px;
+    color: white;
+    border-radius: 5px;
+    width: 45vw;
+}
+
+article#formulario input#esqueci {
+    padding: 10px;
+    border-radius: 5px;
+    width: 45vw;
+}
+
+article#formulario input#iuser, article#formulario input#isenha {
+    
+}
+
+label {
+    background-image: url();
 }
