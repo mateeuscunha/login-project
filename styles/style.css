@@ -6,3 +6,58 @@
     Lilás: #5f2c82
 */
 
+:root {
+    --verde: #49a09d;
+    --lilas: #5f2c82;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, main {
+    background-color: var(--lilas);
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    
+    width: 40vw;
+    height: 80vh;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+article#imagem {
+    background-image: url("../images/pexels-declan-17631857.jpg");
+    width: 40vw;
+    height: 40vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 10px 10px 0px 0px;
+
+    display: inline-block;
+}
+
+article#formulario {
+    width: 40vw;
+    height: 40vh;
+    padding: 10px;
+}
+
+article#formulario h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+article#formulario form {
+    text-align: center;
+    padding: 10px;
+}
