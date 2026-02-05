@@ -16,7 +16,7 @@ Grandes telas: acima de 1200px
     --lilas: #5f2c82;
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) { /*tablets*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
     body {
         background-image: linear-gradient(to top, var(--verde), var(--lilas));
     }
@@ -40,20 +40,7 @@ Grandes telas: acima de 1200px
         font-size: 1.2em;
     }
 
-    
-    form > div.campo {
-        background-color: white;
-    }
-
-    form input[type=submit] {
-        width: 429px;
-    }
-
-    form input[type=button] {
-        width: 429px;
-    }
-}   
-    @media screen and (min-width: 992px) { /*telas grandes*/
+@media screen and (min-width: 992px) {
     body {
         background-image: linear-gradient(to top, var(--verde), var(--lilas));
     }
