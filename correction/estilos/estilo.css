@@ -40,7 +40,6 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden; /*tudo que tiver fora da borda fica hidden*/
     
     background-color: white;
@@ -50,6 +49,7 @@ section#login {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
     transition: width .3s, height .3s; /*quando muda o tamanho demora um tempo (animação)*/
     transition-timing-function: ease; /*suaviza a animação do transition*/
+    transform: translate(-50%, -50%);
 }
 
 section#login > div#imagem {
@@ -99,10 +99,10 @@ form > div.campo > input {
     font-size: 1em;
     width: calc(100% - 46px);
     height: 100%;
-    transform: translateY(-12.2px);
     border: none;
     border-radius: 8px;
     padding: 2px;
+    transform: translateY(-12.2px);
 }
 
 form > div.campo > input:focus-within { /*Quando estiver digitando nele*/
