@@ -3,12 +3,18 @@
 /*
     Paleta de cores
     Verde: #49a09d
-    Lilás: #5f2c82
+    Lilas: #5f2c82
+    Verde escuro: #1d413f
+    Verde claro: #60d5d2
+    Verde muito claro: #a1dad8
 */
 
 :root {
     --verde: #49a09d;
     --lilas: #5f2c82;
+    --escuro: #1d413f;
+    --claro: #57d4d0;
+    --muitoclaro: #a1dad8;
 }
 
 * {

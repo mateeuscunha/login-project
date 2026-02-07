@@ -10,22 +10,26 @@
     <main>
         <section id="login">
             <article id="imagem">
-    
+                <!--imagem em CSS-->
             </article>
             <article id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
                 <form action="login.php" method="post" autocomplete="on">
-                    <div class="campo" id="user">
-                        <label for="iuser">user:</label> <input type="email" name="user" id="iuser">
+                    <div class="campo">
+                        <!--span-->
+                        <input type="email" name="user" id="iuser" placeholder="seu e-mail" autocomplete="email" required maxlength="30">
+                        <label for="iuser">user</label>
                     </div>
-                    <div class="campo" id="senha">
-                        <label for="isenha">password:</label> <input type="password" name="senha" id="isenha">
+                    <div class="campo">
+                        <input type="password" name="senha" id="isenha" placeholder="sua senha" autocomplete="current-password" required minlength="8" maxlength="20">
+                        <label for="isenha">password</label>
                     </div>
-                    <div id="submit">
-                        <input id="entrar" type="submit" value="Entrar">
-                        <input id="esqueci" type="button" value="Esqueci a senha">
-                    </div>
+                    <input id="entrar" type="submit" value="Entrar">
+                    <a href="esqueci.html" class="botao">
+                        Esqueci a senha
+                        <!--span-->
+                    </a>
                 </form>
             </article>
         </section>
