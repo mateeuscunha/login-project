@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+:root {
+    --verde: #49a09d;
+    --lilas: #5f2c82;
+    --escuro: #1d413f;
+    --claro: #57d4d0;
+    --muitoclaro: #a1dad8;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px) { /*tablets*/
+    body, main {
+        background-image: linear-gradient(to top, var(--verde), var(--lilas));
+    }
+
+    section#login {
+        width: 80vw;
+        height: 70vh;
+    }
+
+    article#imagem {
+        float: left;
+        width: 40%;
+        height: 100%;
+    }
+    
+    article#formulario {
+        float: right;
+        width: 60%;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 1000px) { /*desktop and huge screens*/
+    body, main {
+        background-image: linear-gradient(to top, var(--verde), var(--lilas));
+    }
+}
