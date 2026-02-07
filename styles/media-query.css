@@ -30,6 +30,14 @@
         width: 60%;
         height: 100%;
     }
+
+    article#formulario h1 {
+        font-size: 2.7em;
+    }
+
+    article#formulario p {
+        font-size: 1em;
+    }
 }
 
 @media screen and (min-width: 1000px) { /*desktop and huge screens*/
@@ -53,5 +61,26 @@
         float: left;
         width: 50%;
         height: 100%;
+    }
+
+    article#formulario h1 {
+        font-size: 3em;
+    }
+
+    article#formulario p {
+        font-size: 1.1em;
+    }
+
+    form div.campo {
+        height: 50px;
+    }
+
+    form input#entrar {
+        height: 50px;
+    }
+
+    form a.botao {
+        height: 50px;
+        padding-top: 8px;
     }
 }
