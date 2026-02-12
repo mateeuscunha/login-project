@@ -1,0 +1,180 @@
+@charset "UTF-8";
+
+/*
+    Paleta de cores
+    Verde: #49a09d
+    Lilas: #5f2c82
+    Verde escuro: #1d413f
+    Verde claro: #60d5d2
+    Verde muito claro: #a1dad8
+*/
+
+:root {
+    --verde: #49a09d;
+    --lilas: #5f2c82;
+    --escuro: #1d413f;
+    --claro: #57d4d0;
+    --muitoclaro: #a1dad8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+body, main {
+    background-color: var(--lilas);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+section#login {
+    width: 60vw;
+    height: 60vh;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.45);
+    overflow: hidden;
+    
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+    transform: translate(-50%, -50%);
+}
+
+article#imagem {
+    display: block;
+    background: black url(../images/pexels-declan-17631857.jpg) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 40%;
+}
+
+article#formulario {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+article#formulario > h1 {
+    display: block;
+    text-align: center;
+    flex-basis: 5vh;
+}
+
+article#formulario > p {
+    font-size: 0.9em;
+    text-align: justify;
+    line-height: 1.1em;
+    flex-basis: 6vh;
+    margin: 0 10px;
+}
+
+/*a partir daqui são configurações do form*/
+
+form {
+    flex-basis: 25vh;
+}
+
+/*inputs de cima*/
+
+form > div.campo {
+    display: block;
+    width: 90%;
+    height: 40px; /*problem*/
+    line-height: 40px; /*problem*/
+    background-color: var(--lilas);
+    margin: 1% 5%;
+    border-radius: 8px;
+    position: relative;
+}
+
+div.campo span {
+    color: white;
+    font-size: 2em;
+    vertical-align: middle;
+    text-align: center;
+
+    position: absolute;
+    left: 10px; /*problem*/
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+div.campo input {
+    width: calc(100% - 60px); /*problem*/
+    height: 35px;
+    vertical-align: middle;
+    padding: 0 8px;
+    
+    background-color: var(--muitoclaro);
+    border-radius: 8px;
+    border: none;
+    font-size: 0.9em;
+
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+div.campo input:focus-within {
+    background-color: white;
+}
+
+div.campo label {
+    display: none;
+}
+
+/*botoes de baixo*/
+
+form input#entrar {
+    display: block;
+    width: 90%;
+    height: 40px;
+    margin: 1% 5%;
+
+    background-color: var(--verde);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+form input#entrar:hover {
+    background-color: var(--escuro);
+}
+
+form a.botao {
+    display: block;
+    width: 90%;
+    height: 40px;
+    margin: 1% 5%;
+    padding: 5px 0px;
+
+    background-color: white;
+    color: var(--escuro);
+    text-decoration: none;
+    text-align: center;
+    font-size: 1em;
+    border: 2px solid var(--verde);
+    border-radius: 8px;
+}
+
+form a.botao:hover {
+    background-color: var(--claro);
+}
+
+form > a.botao > span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.9em;
+    color: var(--lilas);
+} 
